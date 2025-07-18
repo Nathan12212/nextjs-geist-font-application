@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - EcoEnzyme Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'eco-green': '#2E7D32',
+                        'eco-light': '#8BC34A',
+                        'eco-dark': '#1B5E20'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'opensans': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="font-opensans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-poppins font-bold text-eco-green">EcoEnzyme Pro</h1>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-eco-green transition">Home</a>
+                    <a href="company-profile.html" class="text-gray-700 hover:text-eco-green transition">Company</a>
+                    <a href="products.html" class="text-eco-green font-semibold">Products</a>
+                    <a href="documents.html" class="text-gray-700 hover:text-eco-green transition">Certificates</a>
+                    <a href="videos.html" class="text-gray-700 hover:text-eco-green transition">Videos</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-eco-green transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700">Home</a>
+                <a href="company-profile.html" class="block px-3 py-2 text-gray-700">Company</a>
+                <a href="products.html" class="block px-3 py-2 text-eco-green font-semibold">Products</a>
+                <a href="documents.html" class="block px-3 py-2 text-gray-700">Certificates</a>
+                <a href="videos.html" class="block px-3 py-2 text-gray-700">Videos</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 bg-gradient-to-br from-eco-green to-eco-light text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-poppins font-bold mb-6">
+                    Premium Eco Enzyme Products
+                </h1>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                    Discover our comprehensive range of eco enzyme solutions designed for sustainable agriculture, soil enhancement, and environmental restoration.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-4">
+                    Product Categories
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our eco enzymes are carefully formulated for specific applications, ensuring maximum effectiveness and environmental safety.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-eco-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-poppins font-semibold mb-4">Agricultural Enzymes</h3>
+                    <p class="text-gray-600">Specialized formulations for crop enhancement, soil conditioning, and plant nutrition.</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-eco-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-poppins font-semibold mb-4">Environmental Solutions</h3>
+                    <p class="text-gray-600">Eco-friendly products for waste treatment, water purification, and environmental restoration.</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-8 text-center hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-eco-green rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-poppins font-semibold mb-4">Industrial Applications</h3>
+                    <p class="text-gray-600">Specialized enzymes for industrial processes, cleaning, and biotechnology applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-4">
+                    Featured Products
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our most popular and effective eco enzyme solutions trusted by customers worldwide.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1574263867128-a3d5c1b1deaa?w=600&h=300&fit=crop&crop=center" 
+                         alt="EcoGrow Pro Agricultural Enzyme" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-poppins font-bold text-gray-900">EcoGrow Pro</h3>
+                            <span class="bg-eco-green text-white px-3 py-1 rounded-full text-sm font-semibold">Best Seller</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Premium agricultural enzyme complex designed to enhance soil fertility, improve nutrient uptake, and boost crop yields naturally. Suitable for all crop types and organic farming systems.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Key Benefits:</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Increases crop yield by 15-25%</li>
+                                    <li>• Improves soil structure</li>
+                                    <li>• Enhances nutrient absorption</li>
+                                    <li>• 100% organic certified</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Applications:</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Cereals & Grains</li>
+                                    <li>• Fruits & Vegetables</li>
+                                    <li>• Legumes</li>
+                                    <li>• Ornamental Plants</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-sm text-gray-500">Available in:</span>
+                                <p class="font-semibold">1L, 5L, 20L, 200L</p>
+                            </div>
+                            <button class="bg-eco-green text-white px-6 py-2 rounded-lg font-semibold hover:bg-eco-dark transition">
+                                Request Quote
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=300&fit=crop&crop=center" 
+                         alt="EcoClean Environmental Enzyme" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-poppins font-bold text-gray-900">EcoClean Plus</h3>
+                            <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Eco-Friendly</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            Advanced environmental enzyme solution for water treatment, waste management, and pollution control. Effectively breaks down organic pollutants and improves water quality.
+                        </p>
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Key Benefits:</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Reduces BOD/COD by 80%</li>
+                                    <li>• Eliminates odors naturally</li>
+                                    <li>• Accelerates decomposition</li>
+                                    <li>• Non-toxic formulation</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-2">Applications:</h4>
+                                <ul class="text-sm text-gray-600 space-y-1">
+                                    <li>• Wastewater Treatment</li>
+                                    <li>• Pond Cleaning</li>
+                                    <li>• Composting</li>
+                                    <li>• Industrial Cleaning</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <span class="text-sm text-gray-500">Available in:</span>
+                                <p class="font-semibold">1L, 5L, 20L, 200L</p>
+                            </div>
+                            <button class="bg-eco-green text-white px-6 py-2 rounded-lg font-semibold hover:bg-eco-dark transition">
+                                Request Quote
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Complete Product Range -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-4">
+                    Complete Product Range
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=300&h=200&fit=crop&crop=center" 
+                         alt="EcoSoil Conditioner" 
+                         class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-poppins font-semibold mb-2">EcoSoil Conditioner</h3>
+                    <p class="text-gray-600 mb-4">Specialized enzyme blend for soil structure improvement and microbial activity enhancement.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-eco-green font-semibold">Agricultural</span>
+                        <button class="text-eco-green hover:text-eco-dark transition font-medium">Learn More →</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1574263867128-a3d5c1b1deaa?w=300&h=200&fit=crop&crop=center" 
+                         alt="EcoBoost Fertilizer Enhancer" 
+                         class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-poppins font-semibold mb-2">EcoBoost Enhancer</h3>
+                    <p class="text-gray-600 mb-4">Enzyme complex that maximizes fertilizer efficiency and reduces nutrient loss.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-eco-green font-semibold">Agricultural</span>
+                        <button class="text-eco-green hover:text-eco-dark transition font-medium">Learn More →</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=200&fit=crop&crop=center" 
+                         alt="EcoCompost Accelerator" 
+                         class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-poppins font-semibold mb-2">EcoCompost Accelerator</h3>
+                    <p class="text-gray-600 mb-4">Fast-acting enzyme solution for rapid composting and organic waste decomposition.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-500 font-semibold">Environmental</span>
+                        <button class="text-eco-green hover:text-eco-dark transition font-medium">Learn More →</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=300&h=200&fit=crop&crop=center" 
+                         alt="EcoAqua Water Treatment" 
+                         class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-poppins font-semibold mb-2">EcoAqua Treatment</h3>
+                    <p class="text-gray-600 mb-4">Specialized enzyme blend for aquaculture and water body restoration.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-500 font-semibold">Environmental</span>
+                        <button class="text-eco-green hover:text-eco-dark transition font-medium">Learn More →</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=300&h=200&fit=crop&crop=center" 
+                         alt="EcoIndustrial Cleaner" 
+                         class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-poppins font-semibold mb-2">EcoIndustrial Cleaner</h3>
+                    <p class="text-gray-600 mb-4">Heavy-duty enzyme cleaner for industrial applications and equipment maintenance.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-purple-500 font-semibold">Industrial</span>
+                        <button class="text-eco-green hover:text-eco-dark transition font-medium">Learn More →</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=200&fit=crop&crop=center" 
+                         alt="EcoBio Activator" 
+                         class="w-full h-40 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-poppins font-semibold mb-2">EcoBio Activator</h3>
+                    <p class="text-gray-600 mb-4">Microbial enzyme activator for enhanced biological processes and fermentation.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-purple-500 font-semibold">Industrial</span>
+                        <button class="text-eco-green hover:text-eco-dark transition font-medium">Learn More →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-4">
+                    Technical Specifications
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    All our products meet international quality standards and specifications.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-eco-green text-white">
+                            <tr>
+                                <th class="px-6 py-4 text-left">Parameter</th>
+                                <th class="px-6 py-4 text-left">EcoGrow Pro</th>
+                                <th class="px-6 py-4 text-left">EcoClean Plus</th>
+                                <th class="px-6 py-4 text-left">EcoSoil Conditioner</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                            <tr>
+                                <td class="px-6 py-4 font-semibold">pH Range</td>
+                                <td class="px-6 py-4">6.5 - 7.5</td>
+                                <td class="px-6 py-4">7.0 - 8.0</td>
+                                <td class="px-6 py-4">6.0 - 7.0</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Enzyme Activity</td>
+                                <td class="px-6 py-4">≥ 10,000 U/ml</td>
+                                <td class="px-6 py-4">≥ 8,000 U/ml</td>
+                                <td class="px-6 py-4">≥ 12,000 U/ml</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-semibold">Shelf Life</td>
+                                <td class="px-6 py-4">24 months</td>
+                                <td class="px-6 py-4">18 months</td>
+                                <td class="px-6 py-4">24 months</td>
+                            </tr>
+                            <tr class="bg-gray-50">
+                                <td class="px-6 py-4 font-semibold">Storage Temperature</td>
+                                <td class="px-6 py-4">4-25°C</td>
+                                <td class="px-6 py-4">4-25°C</td>
+                                <td class="px-6 py-4">4-25°C</td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4 font-semibold">Organic Certified</td>
+                                <td class="px-6 py-4">✓ Yes</td>
+                                <td class="px-6 py-4">✓ Yes</td>
+                                <td class="px-6 py-4">✓ Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-eco-green text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-poppins font-bold mb-6">
+                Ready to Export Our Premium Products?
+            </h2>
+            <p class="text-xl opacity-90 mb-8 max-w-3xl mx-auto">
+                Contact our export team for detailed product specifications, pricing, and shipping information.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-eco-green px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                    Request Export Quote
+                </a>
+                <a href="documents.html" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-eco-green transition">
+                    View Certificates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-eco-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-poppins font-bold mb-4">EcoEnzyme Pro</h3>
+                    <p class="text-gray-300 mb-4">Leading manufacturer and exporter of premium eco enzyme solutions for sustainable agriculture worldwide.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="company-profile.html" class="text-gray-300 hover:text-white transition">Company Profile</a></li>
+                        <li><a href="products.html" class="text-gray-300 hover:text-white transition">Products</a></li>
+                        <li><a href="documents.html" class="text-gray-300 hover:text-white transition">Certificates</a></li>
+                        <li><a href="videos.html" class="text-gray-300 hover:text-white transition">Videos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><span class="text-gray-300">Bulk Export</span></li>
+                        <li><span class="text-gray-300">Custom Packaging</span></li>
+                        <li><span class="text-gray-300">Quality Assurance</span></li>
+                        <li><span class="text-gray-300">Technical Support</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Email: export@ecoenzymepro.com</li>
+                        <li>Phone: +1 (555) 123-4567</li>
+                        <li>Address: 123 Green Valley, Eco City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-300">&copy; 2024 EcoEnzyme Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
