@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Videos - EcoEnzyme Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'eco-green': '#2E7D32',
+                        'eco-light': '#8BC34A',
+                        'eco-dark': '#1B5E20'
+                    },
+                    fontFamily: {
+                        'poppins': ['Poppins', 'sans-serif'],
+                        'opensans': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="font-opensans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-poppins font-bold text-eco-green">EcoEnzyme Pro</h1>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-eco-green transition">Home</a>
+                    <a href="company-profile.html" class="text-gray-700 hover:text-eco-green transition">Company</a>
+                    <a href="products.html" class="text-gray-700 hover:text-eco-green transition">Products</a>
+                    <a href="documents.html" class="text-gray-700 hover:text-eco-green transition">Certificates</a>
+                    <a href="videos.html" class="text-eco-green font-semibold">Videos</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-eco-green transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-gray-700">Home</a>
+                <a href="company-profile.html" class="block px-3 py-2 text-gray-700">Company</a>
+                <a href="products.html" class="block px-3 py-2 text-gray-700">Products</a>
+                <a href="documents.html" class="block px-3 py-2 text-gray-700">Certificates</a>
+                <a href="videos.html" class="block px-3 py-2 text-eco-green font-semibold">Videos</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-16 bg-gradient-to-br from-eco-green to-eco-light text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-poppins font-bold mb-6">
+                    Product Explanation Videos
+                </h1>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                    Comprehensive video library showcasing our eco enzyme products, applications, and manufacturing processes for better understanding and effective usage.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Video -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-4">
+                    Featured: Company Overview
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Get to know EcoEnzyme Pro - our story, mission, and commitment to sustainable agriculture.
+                </p>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-900 rounded-lg overflow-hidden shadow-2xl">
+                    <div class="relative aspect-video">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=450&fit=crop&crop=center" 
+                             alt="Company Overview Video" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                            <button class="w-20 h-20 bg-eco-green rounded-full flex items-center justify-center hover:bg-eco-dark transition transform hover:scale-110" onclick="playVideo('company-overview')">
+                                <svg class="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="absolute bottom-4 left-4 bg-black bg-opacity-70 text-white px-3 py-1 rounded text-sm">
+                            Duration: 5:30
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-poppins font-bold text-white mb-2">EcoEnzyme Pro: Leading the Green Revolution</h3>
+                        <p class="text-gray-300 mb-4">
+                            Discover our state-of-the-art manufacturing facility, quality control processes, and commitment to sustainable agriculture. Learn why we're the trusted choice for eco enzyme solutions worldwide.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4 text-sm text-gray-400">
+                                <span>• Company Introduction</span>
+                                <span>• Manufacturing Process</span>
+                                <span>• Quality Standards</span>
+                            </div>
+                            <span class="text-eco-light font-semibold">Featured</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Categories -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-4">
+                    Video Categories
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Explore our comprehensive video library organized by topics for easy navigation.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+                <button class="category-btn active bg-eco-green text-white p-4 rounded-lg font-semibold hover:bg-eco-dark transition" data-category="all">
+                    All Videos
+                </button>
+                <button class="category-btn bg-white text-gray-700 p-4 rounded-lg font-semibold hover:bg-gray-100 transition" data-category="products">
+                    Product Demos
+                </button>
+                <button class="category-btn bg-white text-gray-700 p-4 rounded-lg font-semibold hover:bg-gray-100 transition" data-category="applications">
+                    Applications
+                </button>
+                <button class="category-btn bg-white text-gray-700 p-4 rounded-lg font-semibold hover:bg-gray-100 transition" data-category="manufacturing">
+                    Manufacturing
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Demo Videos -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-4">
+                    Product Demonstration Videos
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Detailed demonstrations of our eco enzyme products and their unique features.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Video 1: EcoGrow Pro -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="relative aspect-video">
+                        <img src="https://images.unsplash.com/photo-1574263867128-a3d5c1b1deaa?w=600&h=340&fit=crop&crop=center" 
+                             alt="EcoGrow Pro Demo" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                            <button class="w-16 h-16 bg-eco-green rounded-full flex items-center justify-center hover:bg-eco-dark transition" onclick="playVideo('ecogrow-demo')">
+                                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-eco-green text-white px-2 py-1 rounded text-xs font-semibold">
+                            NEW
+                        </div>
+                        <div class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                            8:45
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-poppins font-bold mb-2">EcoGrow Pro - Complete Product Demo</h3>
+                        <p class="text-gray-600 mb-4">
+                            Comprehensive demonstration of our flagship agricultural enzyme, including composition, benefits, application methods, and expected results.
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <div class="flex items-center space-x-4 text-gray-500">
+                                <span>• Product Features</span>
+                                <span>• Application Guide</span>
+                            </div>
+                            <span class="text-eco-green font-semibold">8:45 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2: EcoClean Plus -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="relative aspect-video">
+                        <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&h=340&fit=crop&crop=center" 
+                             alt="EcoClean Plus Demo" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                            <button class="w-16 h-16 bg-eco-green rounded-full flex items-center justify-center hover:bg-eco-dark transition" onclick="playVideo('ecoclean-demo')">
+                                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                            6:20
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-poppins font-bold mb-2">EcoClean Plus - Environmental Solution</h3>
+                        <p class="text-gray-600 mb-4">
+                            Learn how EcoClean Plus effectively treats wastewater, reduces pollution, and restores environmental balance in various applications.
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <div class="flex items-center space-x-4 text-gray-500">
+                                <span>• Water Treatment</span>
+                                <span>• Environmental Impact</span>
+                            </div>
+                            <span class="text-eco-green font-semibold">6:20 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Videos -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-4">
+                    Application & Usage Videos
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Step-by-step guides on how to use our eco enzyme products for maximum effectiveness.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Application Video 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="relative aspect-video">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=225&fit=crop&crop=center" 
+                             alt="Agricultural Application" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                            <button class="w-12 h-12 bg-eco-green rounded-full flex items-center justify-center hover:bg-eco-dark transition" onclick="playVideo('agriculture-app')">
+                                <svg class="w-4 h-4 text-white ml-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                            4:15
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-poppins font-semibold mb-2">Agricultural Applications</h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            How to apply eco enzymes in different crop types for optimal growth and yield enhancement.
+                        </p>
+                        <div class="text-xs text-gray-500">
+                            <span>• Crop Application</span> • <span>Dosage Guidelines</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Application Video 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="relative aspect-video">
+                        <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=400&h=225&fit=crop&crop=center" 
+                             alt="Water Treatment Application" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                            <button class="w-12 h-12 bg-eco-green rounded-full flex items-center justify-center hover:bg-eco-dark transition" onclick="playVideo('water-treatment-app')">
+                                <svg class="w-4 h-4 text-white ml-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                            5:30
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-poppins font-semibold mb-2">Water Treatment Guide</h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            Step-by-step process for treating wastewater and contaminated water bodies using eco enzymes.
+                        </p>
+                        <div class="text-xs text-gray-500">
+                            <span>• Treatment Process</span> • <span>Monitoring Results</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Application Video 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="relative aspect-video">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=225&fit=crop&crop=center" 
+                             alt="Composting Application" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                            <button class="w-12 h-12 bg-eco-green rounded-full flex items-center justify-center hover:bg-eco-dark transition" onclick="playVideo('composting-app')">
+                                <svg class="w-4 h-4 text-white ml-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                            3:45
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-lg font-poppins font-semibold mb-2">Composting Acceleration</h3>
+                        <p class="text-gray-600 text-sm mb-3">
+                            Learn how to accelerate composting process and improve compost quality using eco enzymes.
+                        </p>
+                        <div class="text-xs text-gray-500">
+                            <span>• Composting Setup</span> • <span>Enzyme Application</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Manufacturing Process Videos -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-4">
+                    Manufacturing & Quality Control
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Behind-the-scenes look at our manufacturing processes and quality assurance procedures.
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Manufacturing Video 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                    <div class="relative aspect-video">
+                        <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=340&fit=crop&crop=center" 
+                             alt="Manufacturing Process" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                            <button class="w-16 h-16 bg-eco-green rounded-full flex items-center justify-center hover:bg-eco-dark transition" onclick="playVideo('manufacturing-process')">
+                                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                            12:30
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-poppins font-bold mb-2">Complete Manufacturing Process</h3>
+                        <p class="text-gray-600 mb-4">
+                            Take a comprehensive tour of our manufacturing facility and learn about our fermentation technology, quality control, and packaging processes.
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <div class="flex items-center space-x-4 text-gray-500">
+                                <span>• Fermentation</span>
+                                <span>• Quality Testing</span>
+                                <span>• Packaging</span>
+                            </div>
+                            <span class="text-eco-green font-semibold">12:30 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quality Control Video -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                    <div class="relative aspect-video">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=340&fit=crop&crop=center" 
+                             alt="Quality Control Lab" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 hover:opacity-100 transition">
+                            <button class="w-16 h-16 bg-eco-green rounded-full flex items-center justify-center hover:bg-eco-dark transition" onclick="playVideo('quality-control')">
+                                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="absolute bottom-4 right-4 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs">
+                            7:15
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-poppins font-bold mb-2">Quality Control & Testing</h3>
+                        <p class="text-gray-600 mb-4">
+                            Explore our state-of-the-art quality control laboratory and learn about our rigorous testing procedures that ensure product excellence.
+                        </p>
+                        <div class="flex items-center justify-between text-sm">
+                            <div class="flex items-center space-x-4 text-gray-500">
+                                <span>• Lab Testing</span>
+                                <span>• Quality Standards</span>
+                                <span>• Certification</span>
+                            </div>
+                            <span class="text-eco-green font-semibold">7:15 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Playlist -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-poppins font-bold text-gray-900 mb-4">
+                    Complete Video Playlist
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Access our complete video library with detailed information about each video.
+                </p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="p-6 border-b">
+                    <h3 class="text-xl font-poppins font-bold">EcoEnzyme Pro Video Library</h3>
+                    <p class="text-gray-600">Complete collection of product and educational videos</p>
+                </div>
+                <div class="divide-y">
+                    <div class="p-6 hover:bg-gray-50 transition cursor-pointer" onclick="playVideo('company-overview')">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-20 h-12 bg-gray-200 rounded flex items-center justify-center">
+                                <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold">Company Overview & Introduction</h4>
+                                <p class="text-sm text-gray-600">Learn about EcoEnzyme Pro's mission
